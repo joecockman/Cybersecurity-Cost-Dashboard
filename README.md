@@ -1,27 +1,45 @@
 # Cybersecurity-Cost-Dashboard
 ![Cybersecurity-Dashboard Preview](Cybersecurity-Dashboard.png)
 
-The purpose of this dashboard is to allow users to delve deeper into the data behind almost 1000 of Spotify's most streamed songs. The dashboard is built around a dataset downloaded from Kaggle, titled: 'Spotify Most Streamed Songs'. This file can be found above in the repository.
+I created this dashboard as part of my 12 week data analytics bootcamp. The goal was to create an interactive dashboard that users could use to estimate the cost  and implementation time of cybersecurity solutions for their business. 
+
+For this project we partnered with KPMG, who gave us the 5 most common areas of cybersecurity weakness and the specific cybersecurity gaps within those areas. We then researched the current industry leading solutions for each gap and added the pricing and implementation time information.
+
+For each cybersecurity gap we included a primary and alternative solution so that users could compare options.
+
+We also included different options for different sized businesses. These were based on the following scale.
+
+ - Small: 1-49 employees
+
+ - Medium: 50-249 employees
+
+ - Large: 250+ employees
 
 ## I have included visuals on the following variables:
 
-- Most Streamed Artists
-- Most Streamed Songs
-- Highest Energy Songs
-- BPM (Beats per Minute)
-- Number of Times Artist is Featured in Playlists
+- Matrix table displaying information
+- Initial solution setup cost
+- Annual solution cost
+- Running summed totals
+- Severity gauge
 
 ## I have also included filters on the page to help narrow your search. These include:
 
-- Release Month
-- Artist Name Search Bar
+- 'Number of employees' search bar
+- Cybersecurity area dropdown
+- Cybersecurity gap dropdown
+- Solution type toggle - primary or alternative solution
 
-## I created the following calculated fields that are used in many of the visuals:
+## I created the following measures that are used in many of the visuals:
 
-- J - Monthly Top 5 Streams
-- J - Monthly Top 5 BPM
-- J - Monthly Top 5 Energy
-- J - Monthly Top 5 Playlists
-- Name Search
+- Company Sizing
+- Filtered Average Annual Costs
+- Filtered Average Initial Costs
+- Filtered Average Monthly Costs
+- Filtered Implementation Times
+- Max Severity
+- Severity Colour
 
 ## Please read on to find detailed explanations of how I put together different aspects of this dashboard:
+
+# Number of Employees Search Bar
