@@ -48,6 +48,8 @@ In this way, someone using this dashboard could simply type in how many employee
 
 This measure assessed the input to the search bar and returned 'Small', 'Medium' or 'Large' based on the rules established in the code.
 
+All of the costing and implementation time measures below include reference to this measure and as such the whole dashboard is filtered by the search bar input.
+
 ```
 Company Sizing =
 SWITCH(
@@ -151,12 +153,9 @@ TRUE(),
 
 To create the search bar function I used a numeric range parameter ranging from 1 - 1000. I then created a slicer and added that parameter as the slicer field.
 
-Next, I created a card (found in the top right of the dashboard) that will display the company size (small, medium  or large) depending on the number entered into the search bar.
+Next, I created a card (found in the top right of the dashboard) that will display the company size.
 
-I used a measure to achieve this functionality, the code is shown below.
-
-Company Sizing:
-
+The card used the 'Company Sizing' measure, discussed above in the measures section. When a number is typed into the search bar, the card will read that number and compare it to the rules given in the measure about company size. It will then display 'Small', 'Medium' or 'Large'
 
 # Area and Gap Dropdown Filters
 
