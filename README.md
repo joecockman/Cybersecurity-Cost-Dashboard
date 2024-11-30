@@ -65,4 +65,8 @@ SELECTEDVALUE(‘Number of Employees’[Number of Employees]) <= 249, “Medium�
 
 This measure assessed the input to the search bar and returned 'Small', 'Medium' or 'Large' based on the rules established in the code.
 
+# Area and Gap Dropdown Filters
+![Search Bar Preview](Screenshots/Number-of-Employees.png)
+
+
 
