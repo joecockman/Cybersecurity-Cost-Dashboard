@@ -42,8 +42,6 @@ In this way, someone using this dashboard could simply type in how many employee
 - Max Severity
 - Severity Colour
 
-## Please read on to find detailed explanations of how I put together different aspects of this dashboard:
-
 # Measures
 
 ## Company Sizing
