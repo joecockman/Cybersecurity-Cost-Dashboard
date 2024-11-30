@@ -43,3 +43,26 @@ We also included different options for different sized businesses. These were ba
 ## Please read on to find detailed explanations of how I put together different aspects of this dashboard:
 
 # Number of Employees Search Bar
+
+![Search Bar Preview](Screenshots/Number-of-Employees.png)
+
+To create the search bar function I used a numeric range parameter ranging from 1 - 1000. I then created a slicer and added that parameter as the slicer field.
+
+Next, I created a card (found in the top right of the dashboard) that will display the company size (small, medium  or large) depending on the number entered into the search bar.
+
+I used a measure to achieve this functionality, the code is shown below.
+
+Company Sizing:
+
+```
+Company Sizing = SWITCH(
+TRUE(), 
+SELECTEDVALUE(‘Number of Employees’[Number of Employees]) <= 49, “Small”,
+SELECTEDVALUE(‘Number of Employees’[Number of Employees]) <= 249, “Medium”,
+“Large”
+)
+```
+
+This measure assessed the input to the search bar and returned 'Small', 'Medium' or 'Large' based on the rules established in the code.
+
+
